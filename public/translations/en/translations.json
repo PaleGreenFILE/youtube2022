@@ -1,0 +1,42 @@
+{
+	"about": {
+		"description": "Founded in 2000, our company is a provider of IT consulting and software development services. Starting as a small AI product company, we transitioned into IT services and since then have helped non-IT organizations and software product companies improve their business performance and quickly win new customers.",
+		"expertise": {
+			"it": "IT consulting",
+			"mobile-dev": "Mobile Development",
+			"title": "Our expertise",
+			"web-dev": "Web Development"
+		},
+		"title": "A strong team"
+	},
+	"home": {
+		"$": "$",
+		"button": "SIGN UP FOR FREE",
+		"card": "Most popular",
+		"cardFree": "10 users included",
+		"cardFree1": "2 GB of storage",
+		"cardFree2": "Help center access",
+		"cardFree3": "Email support",
+		"cardPro": "20 users included",
+		"cardPro1": "10 GB of storage",
+    "cardEnt": "50 users included",
+    "cardEnt1": "30 GB of storage",
+		"cardPro2": "Help center access",
+    "emailPhone":"Phone & email support",
+		"cardPro3": "Priority email support",
+    "getStarted": "Get Started",
+		"description": "Quickly build an effective pricing table for your potential customers with this layout. It's built with default MUI components with little customization.",
+		"enterprise": "Enterprise",
+    "contactUS": "Contacter Nous",    
+		"features": "Features",
+		"login": "Login",
+		"month": "mo",
+		"support": "Support",
+    "company": "Company",
+    "resources": "Resources",
+    "legal": "Legal"
+
+
+
+	}
+}

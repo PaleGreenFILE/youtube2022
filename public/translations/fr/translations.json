@@ -1,0 +1,38 @@
+{
+  "about": {
+    "description": "Fondée en 2000, notre entreprie est un fournisseur de services de conseil en informatique et de développement de logiciels. Ayant commencé comme une petite entreprise de produits d'IA, nous sommes passés aux services informatiques et depuis, nous avons aidé des organisations non informatiques et des sociétés de produits logiciels à améliorer leurs performances commerciales et à gagner rapidement de nouveaux clients.",
+    "expertise": {
+      "it": "Consultance IT",
+      "mobile-dev": "Developpement mobile",
+      "title": "Notre expertise",
+      "web-dev": "Developpement web"
+    },
+    "title": "Une équipe forte"
+  },
+  "home": {
+    "$": "€",
+    "button": "INSCRIPTION GRATUITE",
+    "card": "Le plus populaire",
+    "cardFree": "10 utilisateurs inclus",
+    "cardFree1": "2 Go de stockage",
+    "cardFree2": " Accès au centre d'aide",
+    "cardFree3": "Assistance par e-mail",
+    "cardPro": "20 utilisateurs inclus",
+    "cardPro1": "10 GB de stockage",
+    "cardEnt": "50 utilisateurs inclus",
+    "cardEnt1": "30 GB de stockage",
+    "emailPhone":"Assistance téléphonique et par e-mail",
+    "cardPro3": "Assistance par e-mail prioritaire",
+    "description": "Créez rapidement un tableau de prix efficace pour vos clients potentiels avec cette mise en page. Il est construit avec des composants MUI par défaut avec peu de personnalisation.",
+    "enterprise": "Entreprise",
+    "getStarted": "Commencer",
+    "contactUS": "Contacter Nous",    
+    "features": "A Propos",
+    "login": "Connexion",
+    "month": "mois",
+    "support": "Support",
+    "company": "Compagnie",
+    "resources": "Nos Ressources",
+    "legal": "Nos Mentions"
+  }
+}

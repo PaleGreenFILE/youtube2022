@@ -1,0 +1,17 @@
+.back {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  padding: 5px;
+  margin: 3px;
+  cursor: pointer;
+}
+.babySide {
+  display: flex;
+  margin-bottom: 20px;
+
+  .IconVisibility {
+    margin-left: -50px;
+  }
+}
