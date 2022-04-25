@@ -1,30 +1,46 @@
 {
-  "name": "pizza-ecommerce",
+  "name": "mui",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^14.1.1",
+<<<<<<< HEAD
     "firebase": "^9.6.11",
-    "next": "12.1.5",
-    "next-images": "^1.8.4",
-    "next-transpile-modules": "^9.0.0",
-    "react": "18.0",
-    "react-dom": "18.0",
-    "react-icons": "^4.3.1",
-    "react-is": "18.0",
-    "react-slideshow-image": "^3.7.3",
-    "styled-components": "^5.3.5"
+=======
+>>>>>>> 7201ae3332c3cd157911099adf7c6e5ada6ec3e3
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "autoprefixer": "^10.4.5",
-    "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.24"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
