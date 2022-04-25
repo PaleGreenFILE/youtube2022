@@ -1,97 +1,103 @@
-import { Mail, Notifications, Pets } from "@mui/icons-material";
-import {
-  AppBar,
-  Toolbar,
-  styled,
-  Typography,
-  Box,
-  InputBase,
-  Badge,
-  Avatar,
-  Menu,
-  MenuItem,
-} from "@mui/material";
-import React, { useState } from "react";
-import image from "../../assets/img/1.jpg";
+import styled from "styled-components";
+import { Search, ShoppingCartOutlined } from "@mui/icons-material/";
+import Badge from "@mui/material/Badge";
+import { mobile } from "../../responsive";
+const Container = styled.div`
+  height: 60px;
+  ${mobile({ height: "50px" })}
+`;
 
-const StyledToolbar = styled(Toolbar)({
-  display: "flex",
-  justifyContent: "space-between",
-});
+const Wrapper = styled.div`
+  padding: 10px 20 px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ${mobile({ padding: "10px 0px" })}
 
-const SearchBar = styled("div")(({ theme }) => ({
-  backgroundColor: "white",
-  padding: "0 10px",
-  borderRadius: theme.shape.borderRadius,
-  width: "40%",
-}));
+`;
 
-const Icons = styled(Box)(({ theme }) => ({
-  display: "flex",
-  marginLeft: "10px",
-  gap: "20px",
-  [theme.breakpoints.up("sm")]: {
-    display: "flex",
-    marginLeft: "650px",
+const Left = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+`;
+const Language = styled.div`
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+  ${mobile({ display: "none" })}
 
-  },
-}));
+`;
+const SearchContainer = styled.div`
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+`;
 
-const UserBox = styled(Box)(({ theme }) => ({
-  display: "flex",
-  gap: "10px",
-  [theme.breakpoints.up("sm")]: {
-    display: "flex",
+const Input = styled.input`
+  border: none;
+  width: 150px;
+  ${mobile({ width: "50px" })}
 
-  },
-}));
+`;
+
+const Logo = styled.h1`
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  ${mobile({ fontSize: "15px", justifyContent:"space-between", marginBottom:"12px" })}
+
+`;
+
+const Center = styled.div`
+  flex: 1;
+`;
+
+const Right = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+  ${mobile({ flex:2, justifyContent: "space-between" })}
+
+`;
+
+const MenuItem = styled.div`
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+  ${mobile({ fontSize: "12px", marginLeft:"10px" })}
+
+`;
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
   return (
-    <AppBar  position="sticky">
-      <StyledToolbar>
-        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          ANGELS SOCIAL
-        </Typography>
-        <Pets sx={{ display: { xs: "block", sm: "none" } }} />
-        <SearchBar>
-          <InputBase placeholder="Search..." />
-        </SearchBar>
-        <Icons>
-          <Badge badgeContent={4} color="error">
-            <Mail />
-          </Badge>
-          <Badge badgeContent={2} color="error">
-            <Notifications />
-          </Badge>
-        </Icons>
-        <Typography variant="span" sx={{ display: { xs: "none", sm: "flex" } }}>
-          Charly Angels
-        </Typography>
-        <UserBox onClick={(e) => setOpen(true)}>
-          <Avatar sx={{ width: 32, height: 32 }} src={image} />
-        </UserBox>
-      </StyledToolbar>
-      <Menu
-        id="demo-positioned-menu"
-        aria-labelledby="demo-positionned-button"
-        open={open}
-        onClose={(e) => setOpen(false)}
-        anchorOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-        transformOrigin={{
-          vertical: "top",
-          horizontal: "right",
-        }}
-      >
-        <MenuItem>Profile</MenuItem>
-        <MenuItem>My Account</MenuItem>
-        <MenuItem>Logout</MenuItem>
-      </Menu>
-    </AppBar>
+    <Container>
+      <Wrapper>
+        <Left>
+          <Language>EN</Language>
+          <SearchContainer>
+            <Input placeholder="Search"/>
+            <Search style={{ color: "gray", fontSize: 16 }} />
+          </SearchContainer>
+        </Left>
+        <Center>
+          <Logo>ANGELS</Logo>
+        </Center>
+        <Right>
+          <MenuItem>REGISTER</MenuItem>
+          <MenuItem>SIGN IN</MenuItem>
+          <MenuItem>
+            <Badge badgeContent={4} color="primary">
+              <ShoppingCartOutlined />
+            </Badge>
+          </MenuItem>
+        </Right>
+      </Wrapper>
+    </Container>
   );
 };
 
