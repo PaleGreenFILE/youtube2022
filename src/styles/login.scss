@@ -1,0 +1,318 @@
+.font-sans {
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+
+.install {
+  text-align: left;
+  margin: -4px;
+  height: 100vh;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.lg\:flex {
+  display: flex;
+}
+
+.bg-grey-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 246, 251, var(--tw-bg-opacity));
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+.items-center {
+  align-items: center;
+}
+.w-7\/12 {
+  width: 128.333333%;
+}
+.hidden {
+  display: none;
+}
+.relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.mb-6 {
+  margin-bottom: 2.5rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+img {
+  border-style: solid;
+  border: none;
+}
+
+.text-4 {
+  font-size: 1.5rem;
+}
+.leading-snug {
+  line-height: 1.375;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+.w-40 {
+  width: 50px;
+  height: 50px;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.block {
+  display: block;
+}
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+.leading-tight {
+  line-height: 1.25;
+  font-size: 1rem;
+}
+.hidden {
+  display: none;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+.w-5\/12 {
+  width: 41.666667%;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lg\:w-5\/12 {
+  width: 43.666667%;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+.justify-center {
+  justify-content: center;
+}
+
+.w-full {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.lg\:w-1\/2 {
+  width: 50%;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.border-b {
+  border-bottom-width: 10px;
+}
+
+.hoov:hover {
+  color: #000;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.bg-grey-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(24, 119, 243, var(--tw-bg-opacity));
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.font-medium {
+  font-weight: 600;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgba(24, 119, 243, var(--tw-text-opacity));
+}
+
+.g-btn {
+  width: 100% !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 15px !important;
+  padding-right: 30px;
+}
+
+.g-btn > div,
+.g-btn > div > svg {
+  width: 40px !important;
+  height: 38px !important;
+}
+
+.border-blue-500:hover {
+  background: rgb(50, 38, 218);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.container-2 {
+  margin: auto;
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+  width: 70%;
+}
+
+form {
+  width: 100%;
+
+  .feedback {
+    font-size: 10px;
+  }
+}
+
+.connect {
+  font-size: 14px;
+  margin: 35px;
+}
+
+
+
+/* Button Phone */
+.button-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-account__footer
+   {
+    width: 120%;
+    margin-left: -35px;
+    padding: 10px;
+    font-size: 10px;
+    color: #000;
+    padding-left: 0.8rem;
+    padding-top: 0.5rem;
+    .lg\:hidden {
+        display: none;
+    }
+  }
+}
+
+  @media (min-width: 1024px) {
+    .lg\:hidden {
+      display: none;
+    
+  }
+}
