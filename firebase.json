@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "functions": {
+    "runtime": "nodejs16",
+    "source": ".",
+    "ignore": [
+      ".firebase/**",
+      ".firebaserc",
+      "firebase.json",
+      "**/node_modules/**",
+      "**/public/**"
+    ]
+  }
+}

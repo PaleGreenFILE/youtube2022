@@ -1,0 +1,48 @@
+{
+  "name": "coza-booking",
+  "version": "0.1.0",
+  "main": "function.js",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "fire": "firebase deploy --only functions:nextServer,hosting"
+  },
+  "dependencies": {
+    "@badrap/bar-of-progress": "^0.1.2",
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.9.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
+    "@heroicons/react": "^1.0.6",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.2",
+    "date-fns": "^2.28.0",
+    "firebase": "^9.6.11",
+    "firebase-admin": "^10.1.0",
+    "firebase-functions": "^3.20.1",
+    "geolib": "^3.3.3",
+    "mapbox-gl": "^2.8.2",
+    "next": "12.1.5",
+    "node-fetch": "^3.2.3",
+    "react": "^18.0.0",
+    "react-date-range": "^1.4.0",
+    "react-dom": "18.0.0",
+    "react-map-gl": "^7.0.11",
+    "tailwind-scrollbar-hide": "^1.1.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.13.0",
+    "eslint-config-next": "12.1.5",
+    "postcss": "^8.4.12",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.0.24"
+  }
+}
