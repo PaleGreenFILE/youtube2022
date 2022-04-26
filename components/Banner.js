@@ -6,9 +6,7 @@ function Banner() {
       <Image
         src="https://firebasestorage.googleapis.com/v0/b/coza-booking.appspot.com/o/assets%2Fmohamed.jpg?alt=media&token=5b093194-fa6f-4e9a-9530-12ff205db9a4"
         layout="fill"
-        objectFit="cover"
-        width={500}
-        height={500}
+        objectFit="cover"       
         alt="banner"
       />
       <div className="absolute top-1/2 w-full text-center">

@@ -19,7 +19,7 @@ export default function Home({ exploreData, cardsData }) {
           name="description"
           content="Coza Booking , votre nouvel recherche de locations de Vacances"
         />
-<script src="https://www.google.com/recaptcha/api.js?render=6Ld9TqMfAAAAAAmYZsmwCUFenZ10V5EQTjRNu2gF"></script>        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       {/*Header*/}
       <Header />
@@ -40,7 +40,7 @@ export default function Home({ exploreData, cardsData }) {
         <section>
           <h2 className=" text-4xl font-semibold py-8 text-center">
             Vivre n'importe où !
-          </h2>          
+          </h2>
 
           <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
             {cardsData?.map(({ img }) => (
@@ -60,8 +60,6 @@ export default function Home({ exploreData, cardsData }) {
     </div>
   );
 }
-
-
 
 export async function getStaticProps() {
   const exploreData = await fetch("https://jsonkeeper.com/b/K7Z7").then((res) =>
