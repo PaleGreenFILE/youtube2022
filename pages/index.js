@@ -19,7 +19,7 @@ export default function Home({ exploreData, cardsData }) {
           name="description"
           content="Coza Booking , votre nouvel recherche de locations de Vacances"
         />
-        <link rel="icon" href="/favicon.ico" />
+<script src="https://www.google.com/recaptcha/api.js?render=6Ld9TqMfAAAAAAmYZsmwCUFenZ10V5EQTjRNu2gF"></script>        <link rel="icon" href="/favicon.ico" />
       </Head>
       {/*Header*/}
       <Header />
