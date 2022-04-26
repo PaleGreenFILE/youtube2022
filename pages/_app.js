@@ -2,6 +2,7 @@ import "tailwindcss/tailwind.css";
 import "../styles/global.css";
 import ProgressBar from "@badrap/bar-of-progress";
 import Router from "next/router";
+import AxeptioInjector from './../private/AxeptioInjector';
 
 const progress = new ProgressBar({
   size: 4,
@@ -15,7 +16,12 @@ Router.events.on("routeChangeComplete", progress.finish);
 Router.events.on("routeChangeError", progress.finish);
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <AxeptioInjector />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;
