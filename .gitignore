@@ -132,4 +132,6 @@ dist
 # other files
 .eslintrc.json
 .package-lock.json
-/.firebase
+.firebase
+firebase.json
+package-lock

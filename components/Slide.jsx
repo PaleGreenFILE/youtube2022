@@ -1,5 +1,6 @@
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import Image from "next/image";
 
 function Slide() {
   const images = [
@@ -47,11 +48,13 @@ function Slide() {
 		<div className="bg-[#d1411e]">
 			<Zoom {...zoomInProperties}>
 				{images.map((each, index) => (
-					<div key={index} className="flex  justify-center h-[300px] sm:h-[400px] lg:h[500px] xl:h-[600px] 2xl:h-[700px] 2xl:w-[1800px]">
-						<img
+					<div key={index} className="flex  justify-center h-[300px]">
+						<Image
 							className="object-contain overflow-hidden rounded-lg "
-							src={each}
-              alt="banner"
+							src={each}							
+							objectFit="contain"
+							alt="banner"
+							layout="fill"
 						/>
 					</div>
 				))}
