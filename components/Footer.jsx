@@ -3,15 +3,15 @@ import Image from "next/image";
 function Footer() {
   return (
     <>
-      <div className="flex justify-between h-[400px]  sm:h-[200px]  md:h-[300px] xl:h-[400px] bg-[#222]">
-        <div className="flex h-[100px] sm:h-[200px] sm:w-[200px] md:w-[300px] md:h-[250px] lg:h[400px] xl:h-[400px] 2xl:h-[400px] 2xl:w-[500px] relative object-cover">
+      <div className="flex justify-between  bg-[#222] sm:h-auto">
+        <div className=" flex h-[100px] relative object-cover">
           <Image
             src="https://firebasestorage.googleapis.com/v0/b/daniella-pizza.appspot.com/o/utils%2Fbg.png?alt=media&token=43f9ba7a-39d4-4662-a1eb-87317fbc4822"
             layout="fill"
             alt="footer"
           />
         </div>
-        <div className=" flex-row md:flex-auto lg:flex  lg:items-center">
+        <div className=" flex-row ">
           <div className=" flex-1 px-5">
             <h2 className="text-sm text-center  p-5 mb-2 font-bold text-[rgb(211,211,211)]">
               DE BONNE PIZZA ,SUPER BIEN GARNIE ET LIVRAISON 2 €
