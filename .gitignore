@@ -131,9 +131,6 @@ dist
 
 # other files
 .eslintrc.json
-util/AxeptioInjector.js
 .firebase/hosting.b3V0.cache
 firebase.json
-
-util/Recaptcha.js
 .firebaserc
