@@ -3,6 +3,10 @@
 @tailwind utilities;
 @tailwind variants;
 
+html,body{
+  margin:0px;
+  padding:0px;
+}
 .done {
   display: flex;
   flex-direction: column;

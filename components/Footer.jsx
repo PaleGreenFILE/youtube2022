@@ -3,8 +3,8 @@ import Image from "next/image";
 function Footer() {
   return (
     <>
-      <div className="flex justify-between  bg-[#222] sm:h-auto">
-        <div className=" flex h-[100px] relative object-cover">
+      <div className="flex justify-between   bg-[#222] sm:h-auto">
+        <div className=" flex  relative object-cover">
           <Image
             src="https://firebasestorage.googleapis.com/v0/b/daniella-pizza.appspot.com/o/utils%2Fbg.png?alt=media&token=43f9ba7a-39d4-4662-a1eb-87317fbc4822"
             layout="fill"

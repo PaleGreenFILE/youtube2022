@@ -1,7 +1,11 @@
 import Image from "next/image";
 import styles from "./order.module.css";
-const Order = () => {
-  const status = 0;
+
+import  axios  from 'axios';
+
+const Order = ({order}) => {
+  
+  const status = order.status;
 
   const statusClass = (index) => {
     if (index - status < 1) return styles.done;
@@ -28,8 +32,8 @@ const Order = () => {
               key=""
             >
               <td>
-                <span className="font-medium text-lg text-center sm:p-14  text-[#d1411e] sm:before:content-['Order:_'] sm:before:text-black sm:before:font-medium ">
-                  12545874521
+                <span className="font-medium text-[15px] items-center justify-center text-center  text-[#d1411e] sm:before:content-['Order:_'] sm:before:text-black sm:before:font-medium ">
+                 {order._id}
                 </span>
               </td>
               <td>
@@ -37,12 +41,12 @@ const Order = () => {
                   key=""
                   className="sm:before:content-['Nom:_'] sm:before:font-medium"
                 >
-                  Kelly Betty
+                  {order.customer}
                 </span>
               </td>
               <td>
                 <span className="sm:before:content-['Adresse:_'] sm:before:font-medium">
-                  Parc Berthault , Bat Dragonnier 3 eme Etage
+                {order.address}
                 </span>
               </td>
               <td>
@@ -52,7 +56,7 @@ const Order = () => {
               </td>
               <td>
                 <span className="font-medium text-lg sm:before:content-['Total:_'] sm:before:font-medium  ">
-                  39,90 €
+                {order.total} €
                 </span>
               </td>
             </tr>
@@ -158,6 +162,13 @@ const Order = () => {
       </div>
     </div>
   );
+};
+
+export const getServerSideProps = async ({ params }) => {
+  const res = await axios.get(`http://localhost:3000/api/orders/${params.id}`);
+  return {
+    props: { order: res.data },
+  };
 };
 
 export default Order;
