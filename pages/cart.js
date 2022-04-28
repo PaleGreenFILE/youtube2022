@@ -9,7 +9,7 @@ import {
 import axios from "axios";
 import { useRouter } from "next/router";
 import { reset } from "../redux/cartSlice";
-import Modals from './../components/Modals';
+import Modals from '../components/Modals';
 
 const Cart = () => {
 
